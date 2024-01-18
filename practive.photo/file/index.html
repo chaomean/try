@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-transform: capitalize;
+            text-decoration: none;
+        }
+        body{
+            height: 100vh;
+        }
+        .photo-header img{
+            width: 100%;
+        }
+        .container{
+            width: 100%;
+            padding: 0px 7%;
+            position: relative;
+            left: 0;
+            right: 0;
+            align-items: center;
+            justify-content: space-between;
+            background-color: aqua;
+            display: flex;
+            box-shadow: 2px 5px 10px black, 0 0 25px burlywood;
+        }
+        .logo{
+            font-size: 25px;
+            font-weight: bolder;
+            padding: 20px;
+            color: white;
+        }
+        .navbar ul {
+            list-style: none;
+        }
+        .navbar ul li{
+            position: relative;
+            float: left;
+        }
+        .navbar ul li a{
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            display: block;
+        }
+        .navbar ul li a:hover{
+            background-color: gray;
+        }
+        .container-content{
+            margin: 15px;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .container-content div{
+            width: 100%;
+            aspect-ratio: 1/1;
+            border: 1px solid black;
+            background-color: bisque;
+        }
+        .container-content div:hover{
+            box-shadow:  2px 5px 10px black, 0 0 25px burlywood;
+        }
+        .container-content div img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="photo-header">
+        <img src="../photo/nono/header.jpg" alt="header">
+    </div>
+    <div class="container">
+        <div class="container-logo">
+            <a href="#" class="logo">LOGO</a>
+        </div>
+        <div class="container-nav">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">news</a></li>
+                    <li><a href="#">fucalty member</a></li>
+                    <li><a href="#">program</a></li>
+                    <li><a href="#">computer lab</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="container-content">
+        <div>
+            <img src="../photo/nono/studen.jpg" alt="all student">
+        </div>
+        <div>
+            <img src="../photo/nono/reward.jpg" alt="reward">
+        </div>
+        <div>
+            <img src="../photo/nono/playing.jpg" alt="playing">
+        </div>
+    </div>
+</body>
+</html>
